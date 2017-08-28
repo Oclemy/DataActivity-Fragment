@@ -3,7 +3,8 @@
  -  Our ContentMain.xml file.
  -  Shall get inflated to MainActivity.
  -  Root tag is relativeLayout.
- -  Contains EditTextx and Spinner
+ -  Contains EditTextx and Spinner.
+ -  Take note of the framelayout. We have assigned an id container. We shall replace it with a fragment instance. It just acts as our container.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
