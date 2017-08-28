@@ -3,8 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tutorials.hp.dataactivity_fragment.MyFragment">
-
-
     <android.support.v7.widget.CardView
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -13,12 +11,10 @@
         card_view:cardCornerRadius="10dp"
         card_view:cardElevation="5dp"
         android:layout_height="300dp">
-
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -28,31 +24,21 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorAccent"
                 android:layout_gravity="center_horizontal"
-                android:padding="5dp"
-                 />
-
+                android:padding="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Name"
                 android:id="@+id/nameTxt"
-                android:padding="5dp"
-                />
-
+                android:padding="5dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Year"
                 android:id="@+id/yearTxt"
-                android:padding="5dp"
-                />
-
+                android:padding="5dp"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
-
-
-
-
 </RelativeLayout>
