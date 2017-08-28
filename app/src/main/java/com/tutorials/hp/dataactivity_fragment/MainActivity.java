@@ -8,7 +8,17 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-
+/*
+- Our MainActivity class.
+- Derives from AppCompatActivity which resides in the support library.
+- Methods: onCreate(),sendData(),fillData().
+- Inflated From content_main.xml using the setContentView() method.
+- The views we use are EditText and Spinner.
+- Reference EditText and Spinner from our layout specification using findViewById().
+- We instantiate a Bundle object and put an int and string inside it.
+- Bundle is a class that extends BaseBundle and implements both Cloneable and Parcelable
+- It maps String values to various Parcelable types.
+ */
 public class MainActivity extends AppCompatActivity {
     private EditText nameTxt;
     private Spinner launchYearSpinner;
@@ -34,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     /*
     SEND DATA TO FRAGMENT
      */
@@ -53,9 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         //THEN NOW SHOW OUR FRAGMENT
         getSupportFragmentManager().beginTransaction().replace(R.id.container,myFragment).commit();
-
     }
-
     /*
     FILL YEARS IN OUR SPINNER
      */
@@ -70,7 +77,5 @@ public class MainActivity extends AppCompatActivity {
 
         //SET ADAPTER INSTANCE TO OUR SPINNER
         launchYearSpinner.setAdapter(adapter);
-
     }
-
 }
